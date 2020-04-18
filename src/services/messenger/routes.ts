@@ -13,5 +13,5 @@ export default [
         res.status(200).send(result);
       }
     ]
-  }
+  },
 ];

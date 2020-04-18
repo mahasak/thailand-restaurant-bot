@@ -1,3 +1,6 @@
 import messengerRoutes from "./messenger/routes";
-
-export default [...messengerRoutes];
+import chatbotRoutes from "./chatbot/routes";
+export default [
+    ...chatbotRoutes, 
+    ...messengerRoutes
+];
