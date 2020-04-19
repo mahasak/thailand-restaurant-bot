@@ -21,8 +21,9 @@ export const sendMessage = async (psid: any, response: any) => {
   await invokeApi(MESSAGE_API, request_body);
 }
 
-export const setupPersistentMenu = async (psid: any, menu: any) => {
+export const setupPersistentMenu = async (menu: any, getStarted: any) => {
   let request_body = {
+    "get_started": getStarted,
     "persistent_menu": menu,
     "access_token": process.env.PAGE_ACCESS_TOKEN
   }

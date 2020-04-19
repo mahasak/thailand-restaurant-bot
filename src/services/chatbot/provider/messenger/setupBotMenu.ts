@@ -25,8 +25,11 @@ export const setupBotMenu = async() => {
       ]
     }
   ];
-  const pageInfo = await getPageInfo();
+
+  const getStarted = {
+    "payload": "FOOD_MENU"
+  };
 
   console.log('setup bot menu');
-  setupPersistentMenu(pageInfo.id, botMenu);
+  setupPersistentMenu(botMenu, getStarted);
 }
