@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { processRequest, verifySubscription } from "./provider/MessengerProvider";
+import { processRequest, verifySubscription } from "./provider/messenger/";
 
 export default [
     {
